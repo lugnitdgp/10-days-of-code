@@ -4,9 +4,30 @@ html{
   height: 100%;
   font-family: 'Open Sans', sans-serif;
 }
-.home {
-  margin: 0%;
+
+#preloader {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#ffdde2; 
+  z-index:99999; 
 }
+#status {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:46%;
+  top:35%; 
+  background-image:url("https://media.giphy.com/media/STroE7bTBLTzxQUrZc/giphy.gif");
+  border-radius: 50%;
+  z-index:9999; 
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-10px 0 0 -36px; 
+}
+
 .glug_logo {
   height: 70px;
   position: absolute;
@@ -26,6 +47,8 @@ html{
 .links {
   font-size: 0.4em;
   font-weight: 400;
+  display: flex;
+  justify-content: space-between;
 }
 .links a{
   color: white;
@@ -34,15 +57,14 @@ html{
 .links a:hover{
   color:white;
 }
-.big {
-  font-size: 0.7em;
-  font-weight:500;
-}
 .description {
+  padding-right: 40px;
   font-size: 0.4em;
   font-weight: bolder;
 }
-.contacts {
+.description1 {
+  font-size: 0.4em;
+  font-weight: bolder;
 }
 .contacts .fa {
   text-align: center;
@@ -52,7 +74,8 @@ html{
   font-size: initial;
   border-radius: 50%;
   padding: 5px;
-  width: 25px;
+  width: 50px;
+  height: 45px;
 }
 .fa:hover {
     opacity: 0.7;
@@ -104,8 +127,21 @@ html{
 }
 
 @media only screen and (max-width: 767px) {
+
+  #status {
+    width:150px;
+    height:150px;
+    left:45%; 
+    top:40%; 
+
+  }
+
+  .container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
   .navbar {
-    padding: 0.1rem 0.8rem !important;
+    background-color:rgb(230,80,92) !important;
   }
   .logo {
     margin-top: -10%;
@@ -121,17 +157,21 @@ html{
   .glug_logo {
     display: none;
   }
+  #main-image {
+    margin-top: -25%;
+  }
+  .clock {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .big {
+    font-size: 0.9em;
+  }
   .links {
     display: none !important;
   }
-  .responsive {
-    margin-top: 10%;
-    height: 52vh;
-    margin-left: -1%;
-  }
-  .clock {
-    margin: 2% 20%;
-    font-size: 0.5em;
+  .contacts .fa {
+    font-size: 30px;
   }
 }
 
@@ -139,23 +179,19 @@ html{
   nav {
     display: none !important;
   }
-  .responsive {
-    margin-top: 10%;
-    height: 52vh;
-    margin-left: -1%;
-  }
   .links {
-    margin-top: 15%;
+    margin-top: 1rem !important;
+    margin-left: -2.5rem !important;
+    font-size: 0.34em;
   }
   .links a{
     padding: 0 1.1em;
   }
   .big {
-    padding-top: 15% !important;
-    font-size: 0.4em;
+    font-size: 0.8em;
   }
   .description {
-    font-size: 0.28em;
+    font-size: 0.3em;
     font-weight: bolder;
   }
   .contacts {
@@ -163,10 +199,8 @@ html{
     padding-left: 10px !important;
   }
   .clock {
-    font-size: 0.26em;
-  }
-  #demo {
-    padding: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
@@ -177,31 +211,20 @@ html{
   .scroll-down {
     display: none;
   }
-  .responsive {
-    height: 50vh;
-  }
   .links {
-    margin-top: 10%;
-  }
-  .links a{
-    padding: 0 2em;
+    margin-top: 1rem !important;
+    margin-right: 1rem !important;
   }
   .big {
-    padding-top: 10% !important;
-    font-size: 0.5em;
+    padding-top: 4% !important;
+    font-size: 0.9em;
   }
   .description {
-    font-size: 0.3em;
+    font-size: 0.4em;
     font-weight: bolder;
   }
   .contacts {
     font-weight: bold;
-  }
-  .clock {
-    font-size: 0.26em;
-  }
-  #demo {
-    padding: 8px;
   }
 }
 

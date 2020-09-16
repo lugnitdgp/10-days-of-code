@@ -5,8 +5,31 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 
+#preloader {
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:#ffdde2; 
+    z-index:99999; 
+  }
+  #status {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:46%;
+    top:35%; 
+    background-image:url("https://media.giphy.com/media/STroE7bTBLTzxQUrZc/giphy.gif");
+    border-radius: 50%;
+    z-index:9999; 
+    background-repeat:no-repeat;
+    background-position:center;
+    margin:-10px 0 0 -36px; 
+  }
+
 .navbar {
-  background-color:rgb(230,80,92); !important;
+  background-color:rgb(230,80,92) !important;
  }
 
 .navbar-brand{
@@ -130,7 +153,6 @@ html{
     margin: 0 30px 50px 0;
     background: rgb(236,236,236);
     position: relative;
-    font-size: 0.8em;
     font-weight: 200;
 }
 .main-timeline .timeline-content:after{
@@ -245,7 +267,27 @@ html{
         transform: translateX(-50%);
     }
 }
+
+@media only screen and (max-width: 767px) {
+
+    #status {
+      width:150px;
+      height:150px;
+      left:45%; 
+      top:40%; 
+  
+    }
+}
 @media only screen and (max-width: 480px){
+
+    #status {
+        width:150px;
+        height:150px;
+        left:45%; 
+        top:40%; 
+  
+      }
+
     .main-timeline .title{
         float: none;
         margin: 0;
