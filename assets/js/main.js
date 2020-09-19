@@ -2,7 +2,8 @@
 //Countdown-->
 
 // Set the date we're counting down to
-var countDownDate = new Date("Oct 2, 2020 00:00:00").getTime();
+var countDownDate = new Date("Oct 2, 2020 16:31:00").getTime();
+var eventDate = new Date("Oct 11, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -12,6 +13,7 @@ var x = setInterval(function () {
 
     // Find the distance between now and the count down date
     var distance = countDownDate - now;
+    var eventDistance = eventDate - now;
 
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -19,17 +21,18 @@ var x = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    var eventDays = Math.floor(eventDistance / (1000 * 60 * 60 *24));
+
     // Display the result in the element with id="demo"
     document.getElementById("demo").innerHTML = "<i class='fas fa-clock'></i> " +days + "d " +  hours + "h " +  minutes + "m " + seconds + "s";
 
-    if(days <= 10) {
-      document.getElementById('main-image').innerHTML="<img src='images/Day " + days + ".png' class='responsive'></img>";
-    } else {
-      document.getElementById('main-image').innerHTML="<img src='images/Day 10.png' class='responsive'></img>"; 
+    if(days > 0) {
+      document.getElementById('main-image').innerHTML="<img src='images/Day " + 0 + ".png' class='responsive'></img>";
     }
     // If the count down is finished, write some text
-    if (distance < 0) {
-        clearInterval(x);
+    if (distance <= 0) {
+        // clearInterval(x);
+        document.getElementById('main-image').innerHTML="<img src='images/Day " + (10-eventDays) + ".png' class='responsive'></img>";
         document.getElementById("demo").innerHTML = "EXPIRED";
     }
 }, 1000);

@@ -4,6 +4,9 @@ html{
   height: 100%;
   font-family: 'Open Sans', sans-serif;
 }
+html,body{
+  overflow-x: hidden;
+}
 
 #preloader {
   position: fixed;
@@ -51,6 +54,9 @@ html{
   font-weight: 400;
   display: flex;
   justify-content: space-between;
+  margin-top: 1rem;
+  margin-right: 1rem !important;
+  margin-left: 1rem !important;
 }
 .links a{
   color: white;
@@ -83,15 +89,25 @@ html{
     opacity: 0.7;
 }
 
-.split-pane {
+.split-pane1{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
   font-size: 2em;
   color: white;
-
   font-weight:300;
+}
+
+.split-pane{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  font-size: 2em;
+  color: white;
+  font-weight:300;
+  padding-left: 3rem !important;
 }
 .clock {
   display: flex;
@@ -106,6 +122,22 @@ html{
 #demo {
     padding: 10px;
     color: #e6505c;
+}
+
+.register {
+  margin-top: -6%;
+}
+button {
+  border-radius: 20px !important;
+  border: none !important;
+}
+button a{
+  color: #e6505c !important;
+  text-decoration: none;
+}
+button a:hover{
+  opacity: 0.7;
+  text-decoration: none;
 }
 
 #myBtn {
@@ -129,32 +161,24 @@ html{
 }
 
 @media only screen and (max-width: 767px) {
-
   #status {
     width:150px;
     height:150px;
     left:45%; 
     top:40%; 
-
   }
-
   .container-fluid {
     padding: 0 !important;
     margin: 0 !important;
+    overflow: hidden !important;
   }
   .navbar {
     background-color:rgb(230,80,92) !important;
+    width: 100%;
   }
   .logo {
     margin-top: -10%;
     height: 8vh;
-  }
-  nav ul li {
-    font-size: 0.6em;
-  }
-  .navbar-toggler {
-    padding:.20rem .20rem !important;
-    font-size: 0.6rem !important;
   }
   .glug_logo {
     display: none;
@@ -168,12 +192,30 @@ html{
   }
   .big {
     font-size: 0.9em;
+    padding-top: 40px;
+    text-align: center;
   }
   .links {
     display: none !important;
   }
   .contacts .fa {
     font-size: 30px;
+  }
+  .split-pane{
+    padding-left: 1rem !important;
+  }
+  .description {
+    padding: 0 15px;
+  }
+  .description1 {
+    margin-top: 25% !important;
+    padding-left: 15px;
+  }
+  .contacts {
+    padding-left: 15px;
+  }
+  .register {
+    padding: 30px 15px !important;
   }
 }
 
@@ -183,13 +225,11 @@ html{
   }
   .links {
     margin-top: 1rem !important;
-    margin-left: -2.5rem !important;
+    margin-left: -1.5rem !important;
     font-size: 0.34em;
   }
-  .links a{
-    padding: 0 1.1em;
-  }
   .big {
+    margin-top: 3rem;
     font-size: 0.8em;
   }
   .description {
@@ -215,9 +255,11 @@ html{
   }
   .links {
     margin-top: 1rem !important;
-    margin-right: 1rem !important;
+    text-align: center;
+    margin-left: -1.0rem !important ;
   }
   .big {
+    margin-top: 3rem;
     padding-top: 4% !important;
     font-size: 0.9em;
   }
@@ -233,5 +275,14 @@ html{
 @media only screen and (min-width: 1200px) {
   nav {
     display: none !important;
+  }
+  .big {
+    margin-top: 3rem;
+  } 
+}
+
+@media only screen and (min-width: 1600px) {
+  .contacts .fa {
+    font-size: 37px;
   }
 }

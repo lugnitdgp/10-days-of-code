@@ -156,6 +156,7 @@ html{
     background: rgb(236,236,236);
     position: relative;
     font-weight: 200;
+    font-size: 0.5em;
 }
 .main-timeline .timeline-content:after{
     content: "";
@@ -299,4 +300,40 @@ html{
     .main-timeline .timeline-content,
     .main-timeline .timeline:nth-child(2n) .timeline-content{ margin-left: 10px; }
     .main-timeline .post{ margin: 5px 0; }
+}
+.logo1 {
+    position: fixed;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    z-index: 100;
+}
+
+@media only screen and (max-width: 767px) {
+    .logo1 {
+        position: fixed;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+        z-index: 100;
+        margin-left: 90px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    .logo1 {
+        position: fixed;
+        left: 0px;
+        width: 40px;
+        height: 40px;
+        z-index: 100;
+        margin-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 570px) and (max-width: 735px) {
+    .logo1 {
+        display: none;
+    }
 }
