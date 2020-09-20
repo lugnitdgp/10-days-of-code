@@ -69,6 +69,7 @@ html,body{
   padding-right: 40px;
   font-size: 0.4em;
   font-weight: bolder;
+  margin-bottom: 0 !important;
 }
 .description1 {
   font-size: 0.4em;
@@ -216,17 +217,18 @@ button a:hover{
   }
   .description {
     padding: 0 15px;
-    font-size: 0.4em;
+    font-size: 0.6em;
   }
   .description1 {
-    margin-top: 25% !important;
+    margin-top: 20% !important;
     padding-left: 15px;
+    font-size: 0.6em;
   }
   .contacts {
     padding-left: 15px;
   }
   .register {
-    padding: 30px 15px !important;
+    padding: 25px 15px !important;
   }
 }
 
@@ -245,7 +247,7 @@ button a:hover{
     font-size: 1.2em !important;
   }
   .description {
-    font-size: 0.7em;
+    font-size: 0.6em;
     font-weight: bolder;
   }
   .description1{
