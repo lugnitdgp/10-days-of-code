@@ -217,7 +217,7 @@ button a:hover{
   }
   .description {
     padding: 0 15px;
-    font-size: 0.6em;
+    font-size: 0.4em;
   }
   .description1 {
     margin-top: 20% !important;
@@ -332,7 +332,7 @@ button a:hover{
     margin-top: 8rem;
   } 
   .register {
-    margin-top: 3rem;
+    margin-top: 0rem;
     /* padding: 50px 15px; */
   }
   .description1{
