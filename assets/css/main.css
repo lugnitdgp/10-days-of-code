@@ -206,6 +206,7 @@ button a:hover{
   }
   .description {
     padding: 0 15px;
+    font-size: 0.4em;
   }
   .description1 {
     margin-top: 25% !important;
@@ -233,7 +234,7 @@ button a:hover{
     font-size: 0.8em;
   }
   .description {
-    font-size: 0.3em;
+    font-size: 0.5em;
     font-weight: bolder;
   }
   .contacts {
@@ -264,7 +265,7 @@ button a:hover{
     font-size: 0.9em;
   }
   .description {
-    font-size: 0.4em;
+    font-size: 0.6em;
     font-weight: bolder;
   }
   .contacts {
@@ -279,10 +280,16 @@ button a:hover{
   .big {
     margin-top: 3rem;
   } 
+  .description {
+    font-size: 0.5em;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
   .contacts .fa {
     font-size: 37px;
+  }
+  .description {
+    font-size: 0.5em;
   }
 }
