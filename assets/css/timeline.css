@@ -156,7 +156,7 @@ html{
     background: rgb(236,236,236);
     position: relative;
     font-weight: 200;
-    font-size: 0.5em;
+    /* font-size: 0.5em; */
 }
 .main-timeline .timeline-content:after{
     content: "";
@@ -182,7 +182,7 @@ html{
     margin-top: 6px;
 }
 .main-timeline .description{
-    font-size: 14px;
+    font-size: 18px;
     color: #7d7b7b;
     line-height: 24px;
     margin: 0;
