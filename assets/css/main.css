@@ -124,9 +124,9 @@ html,body{
     color: #e6505c;
 }
 
-.register {
+/* .register {
   margin-top: -6%;
-}
+} */
 button {
   border-radius: 20px !important;
   border: none !important;
@@ -166,6 +166,9 @@ button a:hover{
     height:150px;
     left:45%; 
     top:40%; 
+  }
+  .reg-btn{
+    font-size: 15px !important;
   }
   .container-fluid {
     padding: 0 !important;
@@ -224,22 +227,29 @@ button a:hover{
   nav {
     display: none !important;
   }
+  
   .links {
     margin-top: 1rem !important;
     margin-left: -1.5rem !important;
-    font-size: 0.34em;
+    font-size: 0.5em;
   }
   .big {
-    margin-top: 3rem;
-    font-size: 0.8em;
+    margin-top: 8rem;
+    font-size: 1.2em !important;
   }
   .description {
-    font-size: 0.5em;
+    font-size: 0.7em;
     font-weight: bolder;
   }
-  .contacts {
+  .description1{
+    font-size: 0.6em;
     font-weight: bold;
-    padding-left: 10px !important;
+    margin-top: 8% !important;
+  }
+  .contacts .fa{
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
   }
   .clock {
     margin-left: 20px;
@@ -247,7 +257,7 @@ button a:hover{
   }
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px){
+/* @media only screen and (min-width: 992px) and (max-width: 1200px){
   nav {
     display: none !important;
   }
@@ -274,22 +284,57 @@ button a:hover{
 }
 
 @media only screen and (min-width: 1200px) {
-  nav {
+   nav {
     display: none !important;
   }
-  .big {
-    margin-top: 3rem;
-  } 
-  .description {
-    font-size: 0.5em;
-  }
-}
-
-@media only screen and (min-width: 1600px) {
+  
   .contacts .fa {
     font-size: 37px;
   }
   .description {
-    font-size: 0.5em;
+    font-size: 0.7em;
+  }
+  .big {
+    margin-top: 8rem;
+  } 
+  .register {
+    margin-top: 3rem;
+   
+  }
+  .description1{
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-top: 8% !important;
+  }
+  .links{
+    font-size: 0.6em;
+  }
+  
+} */
+
+@media only screen and (min-width: 992px) {
+  .contacts .fa {
+    font-size: 37px;
+  }
+  .description {
+    font-size: 0.7em;
+  }
+  .big {
+    margin-top: 8rem;
+  } 
+  .register {
+    margin-top: 3rem;
+    /* padding: 50px 15px; */
+  }
+  .description1{
+    font-size: 0.7em;
+    font-weight: bold;
+    margin-top: 8% !important;
+  }
+  .links{
+    font-size: 0.6em;
+  }
+  nav {
+    display: none !important;
   }
 }
