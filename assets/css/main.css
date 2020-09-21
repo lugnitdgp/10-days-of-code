@@ -8,7 +8,12 @@ html,body{
   overflow-x: hidden;
 }
 
-
+nav.navbar.navbar-light{
+  padding: 0px 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+}
 #preloader {
   position: fixed;
   top:0;
