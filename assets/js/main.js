@@ -84,3 +84,10 @@ $(function(){
 
 
 });
+
+$(function() {
+  $('.scroll-down').click (function() {
+    $('html, body').animate({scrollTop: $('.split-pane').offset().top }, 'slow');
+    return false;
+  });
+});
