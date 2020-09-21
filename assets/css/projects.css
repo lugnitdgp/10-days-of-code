@@ -11,6 +11,7 @@ html{
 
 }
 
+
 #preloader {
 	position: fixed;
 	top:0;
@@ -46,7 +47,7 @@ background-color:rgb(230,80,92);
     margin-left: 1%;
   }
   .nav-item a{
-    font-size: 0.9em;
+    font-size: 1.2em !important;
     color: white;
     text-decoration: underline;
     font-weight: bold;

@@ -5,6 +5,10 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 
+li.nav-item.mt-2.mt-md-0{
+	font-size: 1.22em !important;
+}
+
 #preloader {
     position: fixed;
     top:0;

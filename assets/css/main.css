@@ -8,6 +8,7 @@ html,body{
   overflow-x: hidden;
 }
 
+
 #preloader {
   position: fixed;
   top:0;
@@ -94,6 +95,7 @@ html,body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  background-color: white;
   height: 100vh;
   font-size: 2em;
   color: white;
@@ -164,6 +166,67 @@ button a:hover{
   background-color: white; /* Add a dark-grey background on hover */
 }
 
+
+.scroll-down {
+  opacity: 1;
+  -webkit-transition: all .5s ease-in 3s;
+  transition: all .5s ease-in 3s;
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  margin-left: -16px;
+  display: block;
+  width: 38px;
+  height: 38px;
+  border: 2px solid rgb(230,80,92);
+  background-color: rgb(230,80,92);
+  background-size: 14px auto;
+  border-radius: 50%;
+  z-index: 2;
+  -webkit-animation: bounce 2s infinite 2s;
+  animation: bounce 2s infinite 2s;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.scroll-down:before {
+    position: absolute;
+    top: calc(50% - 8px);
+    left: calc(50% - 6px);
+    transform: rotate(-45deg);
+    display: block;
+    width: 12px;
+    height: 12px;
+    content: "";
+    border: 2px solid white;
+    border-width: 0px 0 2px 2px;
+}
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  50%,
+  80% {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+  60% {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .split-pane{
     height: 100vh;
@@ -186,10 +249,14 @@ button a:hover{
   .navbar {
     background-color:rgb(230,80,92) !important;
     width: 100%;
+    padding-bottom: 0px;
   }
   .logo {
     margin-top: -10%;
-    height: 8vh;
+    padding-left: 10px;
+    /* padding-top: px; */
+    /* height: 8vh; */
+    
   }
   .glug_logo {
     display: none;
@@ -236,7 +303,9 @@ button a:hover{
   nav {
     display: none !important;
   }
-  
+  .scroll-down{
+    display: none;
+  }
   .links {
     margin-top: 1rem !important;
     margin-left: -1.5rem !important;
@@ -345,5 +414,8 @@ button a:hover{
   }
   nav {
     display: none !important;
+  }
+  .scroll-down{
+    display: none;
   }
 }
