@@ -86,7 +86,7 @@ nav.navbar.navbar-light{
   text-decoration: none;
   background-color: white;
   color: #e6505c;
-  font-size: initial;
+  font-size: 36px !important;
   border-radius: 50%;
   padding: 5px;
   width: 50px;
@@ -111,7 +111,7 @@ nav.navbar.navbar-light{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /* height: 100vh; */
+  height: 100vh;
   font-size: 2em;
   color: white;
   font-weight:300;
@@ -308,6 +308,7 @@ button a:hover{
   nav {
     display: none !important;
   }
+  
   .scroll-down{
     display: none;
   }
@@ -316,23 +317,31 @@ button a:hover{
     margin-left: -1.5rem !important;
     font-size: 0.5em;
   }
+  .register{
+    margin-top: -15% !important;
+  }
+  .reg-btn{
+    font-size: 2.2vh !important;
+    width: 15vh;
+  }
   .big {
-    margin-top: 8rem;
-    font-size: 1.2em !important;
+    margin-top: 15%;
+    font-size: 4vh !important;
   }
   .description {
-    font-size: 0.6em;
+    font-size: 2.2vh !important;
     font-weight: bolder;
   }
   .description1{
-    font-size: 0.6em;
+    font-size: 2.1vh;
     font-weight: bold;
     margin-top: 8% !important;
   }
   .contacts .fa{
-    padding: 10px;
-    font-weight: bold;
-    font-size: 25px;
+    text-align: center;
+    font-size: 4vh !important;
+    width: 6vh !important;
+    height: 6vh !important;
   }
   .clock {
     margin-left: 20px;
@@ -400,22 +409,27 @@ button a:hover{
     font-size: 37px;
   }
   .description {
-    font-size: 0.7em;
+    font-size: 2.3vh;
   }
   .big {
-    margin-top: 8rem;
-  } 
-  .register {
-    margin-top: 0rem;
-    /* padding: 50px 15px; */
+    margin-top: 15%;
   }
+  .reg-btn{
+   
+    font-size: 2.2vh !important;
+    /* width: 120px; */
+  } 
+  .register{
+    margin-top: -4%;
+  }
+  
   .description1{
-    font-size: 0.7em;
+    font-size: 2.1vh;
     font-weight: bold;
     margin-top: 8% !important;
   }
   .links{
-    font-size: 0.6em;
+    font-size: 2.5vh;
   }
   nav {
     display: none !important;
