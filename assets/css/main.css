@@ -338,9 +338,9 @@ button a:hover{
   }
   .contacts .fa{
     text-align: center;
-    font-size: 4vh !important;
-    width: 6vh !important;
-    height: 6vh !important;
+    font-size: 2vh !important;
+    width: 4vh !important;
+    height: 4vh !important;
   }
   .clock {
     margin-left: 20px;
