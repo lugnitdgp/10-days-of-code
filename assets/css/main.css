@@ -111,7 +111,6 @@ nav.navbar.navbar-light{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 100vh;
   font-size: 2em;
   color: white;
   font-weight:300;
@@ -233,9 +232,9 @@ button a:hover{
 }
 
 @media only screen and (max-width: 767px) {
-  .split-pane{
-    height: 100vh;
-  }
+ .split-pane{
+  height: 100vh;
+ }
   #status {
     width:150px;
     height:150px;
@@ -292,7 +291,7 @@ button a:hover{
     font-size: 0.4em;
   }
   .description1 {
-    margin-top: 20% !important;
+    margin-top: 8% !important;
     padding-left: 15px;
     font-size: 0.6em;
   }
@@ -347,6 +346,7 @@ button a:hover{
     margin-left: 20px;
     margin-right: 20px;
   }
+  
 }
 
 /* @media only screen and (min-width: 992px) and (max-width: 1200px){
