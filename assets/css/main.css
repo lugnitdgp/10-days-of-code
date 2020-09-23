@@ -280,26 +280,28 @@ button a:hover{
   .links {
     display: none !important;
   }
-  .contacts .fa {
-    font-size: 30px;
-  }
-  .split-pane{
-    padding-left: 1rem !important;
-  }
-  .description {
-    padding: 0 15px;
-    font-size: 0.4em;
-  }
-  .description1 {
-    margin-top: 8% !important;
-    padding-left: 15px;
-    font-size: 0.6em;
-  }
-  .contacts {
-    padding-left: 15px;
-  }
-  .register {
-    padding: 25px 15px !important;
+  .contacts .fa { 
+    font-size: 3vh !important; 
+    height: 5vh; 
+    width: 5vh; 
+  } 
+  .split-pane { 
+    padding-left: 1rem !important; 
+  } 
+  .description { 
+    padding: 0 15px; 
+    font-size: 0.4em; 
+  } 
+  .description1 { 
+    margin-top: 8% !important; 
+    padding-left: 15px; 
+    font-size: 0.5em; 
+  } 
+  .contacts { 
+    padding-left: 15px; 
+  } 
+  .register { 
+    padding: 25px 15px !important; 
   }
 }
 
