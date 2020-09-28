@@ -100,6 +100,7 @@ html {
     .a-span {
         font-size: 6vh;
     }
+    
 }
 
 @media only screen and (max-width: 776px) and (min-width: 568px) {
@@ -117,9 +118,17 @@ html {
     .questions-collapse {
         display: none;
     }
+    
 }
 
 @media only screen and (max-width: 568px) {
+    #status {
+        width:150px;
+        height:150px;
+        left:45%; 
+        top:40%; 
+  
+      }
     #questions {
         display: none;
     }
