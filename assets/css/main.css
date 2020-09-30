@@ -334,7 +334,8 @@ button a:hover {
         margin-top: -15% !important;
     }
     .reg-btn {
-        font-size: 3vh !important;
+        font-size: 2.6vh !important;
+        line-height: 35px;
     }
     .big {
         margin-top: 15%;
@@ -351,7 +352,7 @@ button a:hover {
     }
     .contacts .fa {
         text-align: center;
-        font-size: 2vh !important;
+        font-size: 3vh !important;
         width: 4vh !important;
         height: 4vh !important;
     }
@@ -361,34 +362,7 @@ button a:hover {
     }
 }
 
-
-/* @media only screen and (min-width: 992px) and (max-width: 1200px){
-  nav {
-    display: none !important;
-  }
-  .scroll-down {
-    display: none;
-  }
-  .links {
-    margin-top: 1rem !important;
-    text-align: center;
-    margin-left: -1.0rem !important ;
-  }
-  .big {
-    margin-top: 3rem;
-    padding-top: 4% !important;
-    font-size: 0.9em;
-  }
-  .description {
-    font-size: 0.6em;
-    font-weight: bolder;
-  }
-  .contacts {
-    font-weight: bold;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
+/* @media only screen and (min-width: 1200px) {
    nav {
     display: none !important;
   }
@@ -428,7 +402,7 @@ button a:hover {
         margin-top: 15%;
     }
     .reg-btn {
-        font-size: 3.5vh !important;
+        font-size: 3vh !important;
         /* width: 120px; */
     }
     .register {
@@ -447,5 +421,11 @@ button a:hover {
     }
     .scroll-down {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+    .reg-btn {
+        font-size: 2.6vh !important;
     }
 }
