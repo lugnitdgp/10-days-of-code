@@ -26,7 +26,7 @@ var x = setInterval(function () {
     // Display the result in the element with id="demo"
     document.getElementById("demo").innerHTML = "<i class='fas fa-clock'></i> " +days + "d " +  hours + "h " +  minutes + "m " + seconds + "s";
 
-    if(days > 0) {
+    if(days >= 0) {
       document.getElementById('main-image').innerHTML="<img src='images/Day " + 0 + ".png' class='responsive'></img>";
     }
     // If the count down is finished, write some text
