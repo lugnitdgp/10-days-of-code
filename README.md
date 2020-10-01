@@ -1,2 +1,2 @@
 # 10-days-of-code
-10 days of code website
+Website for the 10 Days of Code event organized by GNU/Linux User's Group, NIT Durgapur
