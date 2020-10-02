@@ -2,8 +2,8 @@
 //Countdown-->
 
 // Set the date we're counting down to
-var countDownDate = new Date("Oct 2, 2020 16:31:00").getTime();
-var eventDate = new Date("Oct 11, 2020 00:00:00").getTime();
+var countDownDate = new Date("Oct 2, 2020 18:30:00").getTime();
+var eventDate = new Date("Oct 12, 2020 00:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -33,7 +33,7 @@ var x = setInterval(function () {
     if (distance <= 0) {
         // clearInterval(x);
         document.getElementById('main-image').innerHTML="<img src='images/Day " + (10-eventDays) + ".png' class='responsive'></img>";
-        document.getElementById("demo").innerHTML = "EXPIRED";
+        document.getElementById("demo").innerHTML = (eventDays)+" days left";
     }
 }, 1000);
 
