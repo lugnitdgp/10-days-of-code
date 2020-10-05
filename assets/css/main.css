@@ -66,6 +66,11 @@ nav.navbar.navbar-light {
     margin-top: -1%;
     padding-right: 10px;
 }
+.small1{
+    height: 6vh;
+    margin-top: -2%;
+    padding-right: 10px;
+}
 
 .glug_logo2 {
     height: 70px;
@@ -73,6 +78,13 @@ nav.navbar.navbar-light {
     /* float: left; */
     top: 0;
     left: 220px;
+    padding: 20px 0px 0px 20px;
+}
+.glug_logo3 {
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 280px;
     padding: 20px 0px 0px 20px;
 }
 .responsive {
@@ -323,6 +335,9 @@ button a:hover {
         display: none;
     }
     .glug_logo2 {
+        display: none;
+    }
+    .glug_logo3 {
         display: none;
     }
     #main-image {
