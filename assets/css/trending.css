@@ -1,0 +1,201 @@
+body {
+    position: relative;
+    height: auto;
+}
+
+ul.nav-pills {
+    top: 15%;
+    /*left: 8%;*/
+    position: fixed;
+    text-decoration: none;
+    font-size: 20px;
+  padding-bottom: 100px;
+}
+li.nav-item{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+li.nav-item.side{
+  border-bottom: 2px solid rgb(230,80,92);
+  padding: 0 7.5vw;
+  text-align: center;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+ul li.nav-item.side:last-child {
+  border-bottom: none;
+}  
+a.nav-link.abc.active{
+  background-color: #ffdde2;
+  border-radius: 10px;
+  color: rgb(230,80,92);
+  }
+#section1 {
+    height: 100vh;
+}
+
+#section2 {
+    height: 100vh;
+}
+
+#section3 {
+    height: 100vh;
+}
+
+
+/* a.nav-link{
+  padding-top: 20px;
+  padding-bottom: 20px;
+} */
+
+#texty {
+    font-size: 1.3em;
+    color: white;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffdde2;
+    z-index: 99999;
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 46%;
+    top: 35%;
+    background-image: url("https://media.giphy.com/media/STroE7bTBLTzxQUrZc/giphy.gif");
+    border-radius: 50%;
+    z-index: 9999;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -10px 0 0 -36px;
+    background-position: unset;
+    background-size: contain;
+}
+
+.navbar {
+    background-color: rgb(230, 80, 92);
+}
+
+.navbar-brand {
+    color: white;
+    margin-left: 1%;
+}
+
+.nav-item a {
+    font-size: 1.1em !important;
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+.navbar a:hover {
+    color: white;
+}
+
+a.nav-link.abc {
+    color: rgb(230, 80, 92);
+    text-decoration: none !important;
+}
+
+.col-sm-9 .col-8 {
+    padding-right: 0px;
+}
+
+span.b {
+    color: rgb(230, 80, 92);
+}
+
+.books {
+    padding-top: 4%;
+    padding-bottom: 0px;
+    padding-left: 5%;
+    /* height: auto; */
+}
+
+.bgs {
+    background-color: #ffdde2;
+}
+
+.bgs1 {
+    background-color: #f8edee;
+}
+
+
+img.img1 {
+    height: 15vh;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.img2 {
+    height: 18vh;
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    ul.nav-pills {
+    top: 8%;
+}
+    img.img1 {
+        height: 12vh;
+        margin-left: 7px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+        margin-right: 25px;
+    }
+    #section1 {
+        height: auto;
+    }
+    #section2 {
+        height: auto;
+    }
+    #section3 {
+        height: auto;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+    #section1 {
+        height: auto;
+    }
+    #section2 {
+        height: auto;
+    }
+    #section3 {
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #status {
+        width: 150px;
+        height: 150px;
+        left: 45%;
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #status {
+        width: 150px;
+        height: 150px;
+        left: 45%;
+        top: 40%;
+    }
+}
+
+@media only screen and (max-width: 572px) {
+    .img-card {
+        margin-top: 20px !important;
+        margin-bottom: 20px !important;
+    }
+}
