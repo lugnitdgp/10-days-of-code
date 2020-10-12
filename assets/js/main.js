@@ -30,11 +30,18 @@ var x = setInterval(function () {
       document.getElementById('main-image').innerHTML="<img src='images/Day " + 0 + ".png' class='responsive'></img>";
     }
     // If the count down is finished, write some text
-    if (distance <= 0) {
+    if (distance <= 0 && eventDays>=0) {
         // clearInterval(x);
         document.getElementById('main-image').innerHTML="<img src='images/Day " + (10-eventDays) + ".png' class='responsive'></img>";
         document.getElementById("demo").innerHTML = (eventDays)+" days left";
     }
+    if(eventDays < 0)
+    {
+      document.getElementById('main-image').innerHTML="<img src='images/Day " + 10 + ".png' class='responsive'></img>";
+      document.getElementById("demo").innerHTML = "Event Completed ";
+    }
+
+
 }, 1000);
 
 //Get the button:
